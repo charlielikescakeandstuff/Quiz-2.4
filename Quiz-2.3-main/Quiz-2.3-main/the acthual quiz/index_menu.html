@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- DEfines languages of content : English -->
+
+<head>
+    <link href="menu2.css" rel="stylesheet"  type="text/css">
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, 
+                   initial-scale=1.0" />
+      <meta name="author" content="Mr.X" />
+      <meta name="Linkedin profile" content="WWW.linkedin.com/Mr.X_123" />
+      <meta name="description " content="A better place to learn computer science" />
+      <title>GeeksforGeeks</title>
+</head>
+<body>
+      <audio controls autoplay loop style="display: none;">
+            <source src="OMORI OST - 038 Space Boyfriend's Tape - I Want Nothing More.mp3" type="audio/mpeg">
+          </audio> 
+      <h1 class="title">Geek out : The ultimate gaming nerd quiz!</h1>
+      <a href="index.html"><button class="quiz">click here to begin!</button></a>
+<div></div>
+<a href="https://youtu.be/JoyOW8V_ZCA?si=-rAHnELs-rlKV7OC"><img src="omori (1).gif" class="aubrey"></a>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class ="container">
+
+      </div>
+      <a href="https://tylerlikescakeandstuff.carrd.co"><img src="Mewo_sprite.gif" id="mewo">
+        <audio id="hover-audio" src="mewo sound effect (omori)-[AudioTrimmer.com].mp3"></audio></a>
+</body>
+
+</html>
+<script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+    const image = document.getElementById('mewo');
+    const audio = document.getElementById('hover-audio');
+
+    image.addEventListener('mouseenter', () => {
+        audio.play();
+    });
+
+    image.addEventListener('mouseleave', () => {
+        audio.pause();
+        audio.currentTime = 0;
+    });
+});
+</script>

@@ -1,0 +1,105 @@
+#question{
+  transform: translatey(-10px);
+  font-size: 60PX; 
+  color: azure;
+  text-align: center;
+  font-family: serif, sans-serif;
+}
+#options{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align:  center;
+  font-family: Montserrat, sans-serif;
+}
+
+button{
+margin-top:100px ;
+text-align: auto;
+border-color:rgb(175, 121, 224);
+background-color: rgba(255, 255, 255, 0.336);
+font-size: 25px;
+width: 200px;
+height:140px;
+border-radius: 5px;
+border-width: 1.8px;
+transition: 0.1s;
+color: #ffffff;
+}
+
+button:hover {
+  background-color: rgb(193, 164, 226);
+  color: aliceblue;
+}
+body {
+  background-image: url(wallpaperflare.com_wallpaper.jpg);
+}
+.title{
+  position: absolute;
+  top:0px;
+  left: 20%;  
+  font-size: 40px;
+  font-weight: 700; color:#392977;
+  text-transform: uppercase;
+  word-spacing: 1px; letter-spacing:2px;
+}
+.space{
+  height: 100px;
+}
+.loader {
+  width: 200px;
+  height: 200px;
+  content: url(2nyj3436j73b1.gif);
+  position: absolute;
+  transform: translateX(565px) translateY(170px);
+  opacity: 90%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide content initially */
+.content {
+  display: none;
+}
+.throbbing-image-container { 
+  display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+
+}  
+.throbbing-image {
+  float:left;
+  height:auto;
+  width: 100px; /* Adjust size as needed */
+  animation: throb 1.5s infinite;
+}
+.throbbing-image2 {
+  justify-content: right;
+  float:right;
+  margin-left: 200px;
+  height:auto;
+  width: 100px; /* Adjust size as needed */
+  animation: throb 1.5s infinite;
+}
+@keyframes throb {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+body {
+  cursor: url("cursor\ \(4\).cur");
+}
+.aubrey{
+  height: 50px;
+  width:auto;
+  transform: translateX(200px);
+}

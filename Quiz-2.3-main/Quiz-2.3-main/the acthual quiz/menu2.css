@@ -1,0 +1,74 @@
+.title{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(113, 69, 155);
+transform: translateX(350px) translateY(100px);
+    font-family: Comic Sans MS , cursive;
+    border: 2px solid;
+    border-color: rgb(113, 69, 155);
+    background-color: #f8f1f8;
+    width: fit-content;
+
+}
+body{
+    background-image: url(wallhaven-6orz3x_1280x720.png);
+}
+#mewo {
+    height: 80px;
+    width:auto;
+    transform: translateX(20px) translateY(120px);
+
+}
+
+#mewo:hover {
+    transform: translateX(20px) translateY(110px);
+    height: 105px;
+    width: auto;
+
+    content: url('Mewo\ the\ cat\ \(2\)\ -\ Sofia\ Galli.gif');
+}
+
+.quiz:hover{
+    background-image: url(wzWPBSd.png);
+    color: white;
+}
+body {
+    cursor: url("icons8-cursor-50.png");
+  }
+  .quiz {
+    transform: translateX(544px) translateY(350px);
+    background-color: #f8f1f8;
+    border: 2px solid rgb(113, 69, 155);
+    border-radius: 30px;
+    box-shadow: rgb(113, 69, 155) 4px 4px 0 0;
+    color: blueviolet;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-74:active {
+    box-shadow: rgb(113, 69, 155) 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .quiz {
+      min-width: 90px;
+      padding: 0 25px;
+    }
+  }
+  .aubrey{
+    height: 50px;
+    width:auto;
+    transform: translateX(850px) translateY(50px);
+  }
+

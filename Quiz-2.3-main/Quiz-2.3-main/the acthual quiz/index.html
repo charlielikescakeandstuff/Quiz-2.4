@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader"></div>
+  <div id="background" class="background"></div>
+<audio controls autoplay loop style="display: none;">
+  <source src="omori oststuff.mp3" type="audio/mpeg">
+</audio> 
+<div id="content" class="content">
+
+  <div id="quiz">
+
+    <div class="throbbing-image-container">
+      <a href="https://www.omocat-shop.com/cdn/shop/products/OMORI_plush_edits03_550x.png?v=1665686185"><img src="hero_ok.png" alt="Throbbing Image" class="throbbing-image"></a>
+      <a href="https://omoriplush.com/wp-content/uploads/2023/01/OMORI_plush_edits05_988fb4aa-916e-4b8b-8a73-a2ba9905a2cc.png"><img src="mari_wave.png" alt="Throbbing Image" class="throbbing-image2"></a>
+    </div>
+      <div class="space" >‎</div>
+      <h1 class="title">The only nerd quiz you'll need.</h1>
+    <div id="question"></div>
+    <audio controls style="display: none;" id="Myaudio">
+      <source src="omori-critical-hit-it-hit-right-in-the-heart-[AudioTrimmer.com].mp3" type="audio/mpeg"></audio>
+    <div id="options">
+  </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+
+    setTimeout(function (){
+        hideLoader();
+        showContent();
+    }, 2000);
+
+    function hideLoader() {
+        const loader = document.getElementById("loader");
+        loader.style.display = "none";
+    }
+
+    function showContent() {
+        const content = document.getElementById("content");
+        content.style.display = "block";
+        anime({
+      targets: '.title',
+      top: 120,
+      opacity : [0 , 1] ,
+      duration : 1500 ,
+      easing: 'easeInOutExpo'
+  
+})
+      anime({
+    targets: "#question",
+    opacity:[0 , 1],
+    duration:1800,
+    easing: 'easeInOutExpo'
+
+})
+    anime({
+      targets:"#options",
+      opacity:[0,1],
+      duration: 7000
+    })
+
+    }
+;
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+
+    const button = document.getElementById('options');
+    const audio = document.getElementById('Myaudio');
+    
+
+    button.addEventListener('click', function (){
+        audio.play();
+    });
+});
+</script>
+
+</body>
+</html>
